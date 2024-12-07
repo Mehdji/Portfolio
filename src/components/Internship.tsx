@@ -1,2 +1,2 @@
 // src/components/Intership.tsx
-export default function internship() {}
+export default function Internship() {}

@@ -1,2 +1,2 @@
 // srx/components/TechnologyMonitoring.tsx
-export default  function(){}
+export default function TechnologyMonitoring() {}

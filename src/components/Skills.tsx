@@ -1,2 +1,2 @@
 // src/components/Skills.tsx
-export default function skills() {}
+export default function Skills() {}

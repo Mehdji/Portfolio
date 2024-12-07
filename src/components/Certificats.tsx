@@ -1,2 +1,2 @@
 // src/components/Certificats.tsx
-export default function certificats() {}
+export default function Certificats() {}
