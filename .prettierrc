@@ -1,0 +1,11 @@
+{
+    "tabWidth": 2,
+    "useTabs": false,
+    "plugins": [
+      "prettier-plugin-tailwindcss",
+      "prettier-plugin-organize-imports"
+    ],
+    "trailingComma": "all",
+    "endOfLine": "lf"
+  }
+  

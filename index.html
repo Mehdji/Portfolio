@@ -1,3 +1,4 @@
+<!--Mehdi NAOUI, BTS SIO 2024-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -17,6 +18,16 @@
     <!-------------------------------------------------------->
   </head>
   <body>
+    <!-- Use a form tag to send information given by users in contact section-->
+     <!-- The form used by the user is created through React in contact.tsx-->
+     <!-- The forml element is  sent to netlify-->
+      <!--Not finished yet-->
+      <form name="contact" netlify netlify-honeypot="botfield" hidden>
+        <input type="text" name="name"/>
+        <input type="email" name="email"/>
+        <textarea name="message"></textarea>
+      </form>
+      
     <!--Below div element act as container for my React application-->
     <div id="root"></div>
     <!--Javascript file loader; type="module" indicate tha is a JS module so i can use import and export; src="/src/main.tsx" specifies the main entry 

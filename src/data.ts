@@ -1,3 +1,9 @@
+import { ReactNode } from "react";
+import { FaHtml5, FaCss3,FaJs, FaReact } from "react-icons/fa";
+import { ReactElement } from "react";
+import { SiAdobephotoshop, SiAdobepremierepro } from "react-icons/si";
+import { TbSql } from "react-icons/tb";
+import { GiDeliveryDrone } from "react-icons/gi";
 export const projects = [
   {
     title: "Landing",
@@ -29,3 +35,50 @@ export const projects = [
     link: "https://codepen.io/Mehdi787/full/XWLRvWW",
   },
 ];
+
+interface skill {
+  title: string;
+  logo: React.ComponentType;
+
+}
+
+/*Creating an array of objects that we use in skills.tsx to render "skills"*/
+/*Each object describe a skill with a title and a logo.Title is a string and logo is a React.ComponentType"*/
+export const skills:skill[] = [
+  {
+    title:"HTML",
+    logo: FaHtml5,
+  },
+  {
+    title:"CSS",
+    logo: FaCss3,
+  },
+  {
+    title:"JavaScript",
+    logo: FaJs,
+  },
+  {
+    title:"React",
+    logo: FaReact
+  },
+
+  {
+    title:"SQL",
+    logo: TbSql
+  },
+  {
+    title:"Drone",
+    logo: GiDeliveryDrone
+  },
+  {
+    title:"Photoshop",
+    logo: SiAdobephotoshop
+  },
+  {
+    title:"PremierePro",
+    logo: SiAdobepremierepro
+  }
+  
+  
+]
+

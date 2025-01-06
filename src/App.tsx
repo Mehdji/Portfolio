@@ -1,3 +1,5 @@
+//Mehdi NAOUI
+//BTS SIO SLAM 2024
 import React, { useEffect, useState } from "react";
 import About from "./components/About";
 import Certificats from "./components/Certificats";
@@ -39,11 +41,11 @@ export default function App(): React.ReactNode {
       </button>
       <About />
       <Certificats />
-      <Contact />
       <Internship />
       <Navbar />
       <Project />
       <Skills />
+      <Contact />
       <TechnologyMonitoring />
     </main>
   );
