@@ -24,7 +24,8 @@ export default function Projects() {
             Here you can take a look at my creations.
           </p>
         </div>
-        <div className="flex flex-wrap h-screen -m-4 border-red-400 border-4">
+        <div className="flex flex-wrap h-screen -m-4 ">
+          {/*border-red-400 border-4*/}
           {projects.map((project) => (
             <a
               href={project.link}
