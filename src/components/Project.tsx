@@ -32,7 +32,7 @@ export default function Projects() {
               key={project.image}
               className="sm:w-1/2 w-screen  p-4"
             >
-              <div className="flex relative rounded-lg overflow-hidden h-full">
+              <div className="flex relative rounded-lg overflow-hidden h-full shadow-sky-950 shadow-lg">
                 <img
                   alt="gallery"
                   className="absolute inset-0 w-full  object-cover object-center"

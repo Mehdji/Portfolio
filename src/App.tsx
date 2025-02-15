@@ -8,6 +8,7 @@ import Internship from "./components/Internship";
 import Navbar from "./components/Navbar";
 import Project from "./components/Project";
 import Skills from "./components/Skills";
+import Skillsmatrix from "./components/skillsmatrix";
 import TechnologyMonitoring from "./components/TechnologyMonitoring";
 
 export default function App(): React.ReactNode {
@@ -42,9 +43,10 @@ export default function App(): React.ReactNode {
       <About />
       <Certificats />
       <Internship />
+      <Skillsmatrix />
       <Navbar />
-      <Project />
       <Skills />
+      <Project />
       <Contact />
       <TechnologyMonitoring />
     </main>
