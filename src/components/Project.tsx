@@ -6,7 +6,6 @@
 import { CodeBracketIcon } from "@heroicons/react/24/solid";
 //importing project object from data.ts
 import { projects } from "../data";
-
 // src/components/Project.tsx
 export default function Projects() {
   return (

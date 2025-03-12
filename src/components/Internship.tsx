@@ -8,7 +8,7 @@ import autrice_workstation from "../assets/poste_de_travail_autrice.jpg";
 export default function Internship() {
   return (
     <section
-      id="intership"
+      id="internship"
       className=" text-sky-950 dark:text-blue-100 body-font"
     >
       <div className="container px-5 h-auto pt-10 mx-auto text-center lg:px-40 ">
