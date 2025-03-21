@@ -1,8 +1,9 @@
 // src/components/navbar.tsx
 
+import { Switch } from "@/components/ui/switch";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import { useEffect, useState } from "react";
-
+import { GoMoon, GoSun } from "react-icons/go";
 export default function Navbar() {
   const [darkmode, setDarkmode] = useState<boolean>(false);
 
@@ -26,13 +27,14 @@ export default function Navbar() {
     <header className="bg-gray-800 md:sticky top-0 z-10">
       <div className="container mx-auto flex flew-wrap p-5 flex-col md:flex-row items-center">
         <a className="title-font gont -medium text-white mb-4 md:mb-0">
-          <button
+          {/*<button
             className="ml-4 inline-flex font-title text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg"
             onClick={toggleDarkmode}
           >
             {darkmode && `Dark`}
             {!darkmode && `Bright`}
-          </button>
+          </button>*/}
+
           <a href="#about" className="ml-3 text-xl">
             Mehdi NAOUI
           </a>
@@ -41,7 +43,7 @@ export default function Navbar() {
           <a href="#internship" className="mr-5 hover:text-white">
             Internship
           </a>
-          <a href="#skills_matrix" className="mr-5 hover:text-white">
+          <a href="#skills_matrix" className="mr-5 hover:text-white ">
             Skill's matrix
           </a>
           <a href="#skills" className="mr-5 hover:text-white">
@@ -60,6 +62,14 @@ export default function Navbar() {
             Hire Me
             <ArrowRightIcon className="w-4 h-4 ml-1" />
           </a>
+          <Switch
+            checked={darkmode}
+            onCheckedChange={toggleDarkmode}
+            id="swith-dk-mode"
+          />
+          <label htmlFor="swith-dk-mode">
+            {darkmode ? <GoMoon /> : <GoSun />}
+          </label>
         </nav>
       </div>
     </header>

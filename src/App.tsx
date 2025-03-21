@@ -30,7 +30,7 @@ export default function App(): React.ReactNode {
   };
 
   return (
-    <main className="text-gray-400 bg-blue-100 dark:bg-gray-900">
+    <main className="text-gray-400 bg-blue-100 dark:bg-gray-900 scroll-smooth">
       {/*<button
         className="ml-4 inline-flex font-title text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg"
         onClick={toggleDarkmode}
