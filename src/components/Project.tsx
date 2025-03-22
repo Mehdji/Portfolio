@@ -6,7 +6,6 @@
 import { CodeBracketIcon } from "@heroicons/react/24/solid";
 //importing project object from data.ts
 import { projects } from "../data";
-
 // src/components/Project.tsx
 export default function Projects() {
   return (
@@ -38,7 +37,7 @@ export default function Projects() {
                   className="absolute inset-0 w-full  object-cover object-center"
                   src={project.image}
                 />
-                <div className="px-8 py-5 relative z-10 w-full h-1/3 border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                <div className="px-8 py-5 relative z-5 w-full h-1/3 border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
                   <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
                     {project.subtitle}
                   </h2>

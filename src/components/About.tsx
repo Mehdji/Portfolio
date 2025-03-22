@@ -10,7 +10,7 @@ export default function About(): JSX.Element {
             <br className="hidden  lg:inline-block" />I love to build amazing
             apps.
           </h1>
-          <p className="mb-8 font-body leading-relaxed  text-sky-950 dark:text-blue-100">
+          <p className="mb-8 font-body  leading-relaxed  text-sky-950 dark:text-blue-100">
             Welcome on board.I'm monastically engaged in computer science and
             especially in coding.I discovered that discpline and daily routine
             are a the most important quality to aquire new knowledge and produce
