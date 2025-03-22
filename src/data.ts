@@ -3,34 +3,38 @@ import { FaHtml5, FaCss3,FaJs, FaReact } from "react-icons/fa";
 import { SiAdobephotoshop, SiAdobepremierepro } from "react-icons/si";
 import { TbSql } from "react-icons/tb";
 import { GiDeliveryDrone } from "react-icons/gi";
+import landing from "/src/assets/landing.png";
+import form from "/src/assets/form.png";
+import python from "/src/assets/python.png";
+import tribute from "/src/assets/tribute.png";
 export const projects = [
   {
     title: "Landing",
     subtitle: "HTML and CSS",
     description:
       "This is a classic landing page made using only html and css wihtout use of AI.",
-    image: "/src/assets/landing.png",
+    image: landing,
     link: "https://codepen.io/Mehdi787/full/QWXvXeJ",
   },
   {
     title: "Form",
     subtitle: "HTML and CSS",
     description: "A customer review form made in html and css.",
-    image: "/src/assets/form.png",
+    image: form,
     link: "https://codepen.io/Mehdi787/full/zYVNJEE",
   },
   {
     title: "Python",
     subtitle: "HTML and CSS",
     description: "A web tutorial for the python programming language.",
-    image: "/src/assets/python.png",
+    image: python,
     link: "https://codepen.io/Mehdi787/full/MWMmMLx",
   },
   {
     title: "Tribute",
     subtitle: "HTML and CSS",
     description: "A tribute page dedicated to my father.",
-    image: "/src/assets/tribute.png",
+    image: tribute,
     link: "https://codepen.io/Mehdi787/full/XWLRvWW",
   },
 ];
