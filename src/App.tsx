@@ -1,6 +1,6 @@
 //Mehdi NAOUI
 //BTS SIO SLAM 2024
-import React, { useEffect, useState } from "react";
+import React from "react";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Internship from "./components/Internship";
@@ -10,25 +10,6 @@ import Skills from "./components/Skills";
 import Skillsmatrix from "./components/Skillsmatrix";
 
 export default function App(): React.ReactNode {
-  //Darkmode 'useState' hooks initialization, origninally false.
-  const [darkmode, setDarkmode] = useState<boolean>(false);
-
-  useEffect(() => {
-    //Here we decide if we turn on/off darkmode.
-    //We are using a useEffect hooks to manage the side effect.
-    if (darkmode) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [darkmode]);
-
-  //toggle darmode using setDarkmode
-  const toggleDarkmode = () => {
-    setDarkmode(!darkmode);
-    console.log(darkmode);
-  };
-
   return (
     <main className="text-gray-400 bg-blue-100 dark:bg-gray-900 scroll-smooth">
       {/*<button

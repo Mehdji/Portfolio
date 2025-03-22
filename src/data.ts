@@ -1,6 +1,5 @@
-import { ReactNode } from "react";
+
 import { FaHtml5, FaCss3,FaJs, FaReact } from "react-icons/fa";
-import { ReactElement } from "react";
 import { SiAdobephotoshop, SiAdobepremierepro } from "react-icons/si";
 import { TbSql } from "react-icons/tb";
 import { GiDeliveryDrone } from "react-icons/gi";
