@@ -1,4 +1,6 @@
 // src/components/About.tsx
+import avatar_dev from "../assets/dev1.svg";
+
 export default function About(): JSX.Element {
   return (
     <section id="about">
@@ -39,7 +41,7 @@ export default function About(): JSX.Element {
           <img
             className="object-cover object-center rounded"
             alt="hero"
-            src="./dev1.svg"
+            src={avatar_dev}
           />
         </div>
       </div>

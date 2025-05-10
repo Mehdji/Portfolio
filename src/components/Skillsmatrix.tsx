@@ -1,6 +1,6 @@
 import { TableCellsIcon } from "@heroicons/react/24/solid";
 
-import matrice from "../assets/matrice.pdf";
+import matrice from "../assets/matrice2.pdf";
 
 export default function Skillsmatrix() {
   return (
@@ -21,7 +21,7 @@ export default function Skillsmatrix() {
             different environments.
           </p>
           <div className=" my-10 text-center">
-            <iframe src={matrice} width="100%" height="1200PX"></iframe>
+            <iframe src={matrice} width="100%" height="1200px"></iframe>
           </div>
         </div>
       </div>

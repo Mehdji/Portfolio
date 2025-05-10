@@ -90,6 +90,7 @@ export default function Internship() {
             </li>
             <div className="overflow-hidden mx-auto my-10  w-1/3 shadow-sky-950 shadow-lg rounded-3xl ">
               <img src={autrice_workstation} className=" text-center "></img>
+              <p>Blabla</p>
             </div>
           </ul>
           <div className=" my-10 text-center"></div>

@@ -62,15 +62,27 @@ export default function Navbar() {
             Hire Me
             <ArrowRightIcon className="w-4 h-4 ml-1" />
           </a>
-          <Switch
-            checked={darkmode}
-            onCheckedChange={toggleDarkmode}
-            id="swith-dk-mode"
-          />
-          <label htmlFor="swith-dk-mode">
-            {darkmode ? <GoMoon /> : <GoSun />}
-          </label>
         </nav>
+
+        {/*<label htmlFor="swith-dk-mode " className="mb-2">
+            {darkmode ? <GoMoon /> : <GoSun />}
+          </label>*/}
+        {darkmode ? (
+          <GoSun className="text-slate-500" />
+        ) : (
+          <GoSun className="text-white" />
+        )}
+        <Switch
+          checked={darkmode}
+          onCheckedChange={toggleDarkmode}
+          id="swith-dk-mode"
+          className="mx-2 "
+        />
+        {darkmode ? (
+          <GoMoon className="text-white" />
+        ) : (
+          <GoMoon className="text-slate-500" />
+        )}
       </div>
     </header>
   );
