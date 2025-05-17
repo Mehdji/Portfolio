@@ -9,13 +9,13 @@ export default function Internship() {
   return (
     <section
       id="internship"
-      className=" text-sky-950 dark:text-blue-100 body-font"
+      className=" text-sky-950 dark:text-blue-100 body-font scroll-mt-28"
     >
-      <div className="container px-5 h-auto pt-10 mx-auto text-center lg:px-40 ">
+      <div className="container px-5 h-auto pt-10 mx-auto text-center lg:px-40  ">
         <div className="text-center">
           <WrenchScrewdriverIcon className="mx-auto inline-block w-10 mb-4 text-sky-600 font-bold" />
           <h1 className="sm:text-4xl mb-10 text-3xl font-medium title-font  text-sky-950 dark:text-blue-100">
-            Internship
+            Stage
           </h1>
           <div className="overflow-hidden mx-auto my-10  w-1/3 shadow-sky-950 shadow-lg rounded-3xl ">
             <img src={autrice_front} className=" text-center "></img>
@@ -90,7 +90,6 @@ export default function Internship() {
             </li>
             <div className="overflow-hidden mx-auto my-10  w-1/3 shadow-sky-950 shadow-lg rounded-3xl ">
               <img src={autrice_workstation} className=" text-center "></img>
-              <p>Blabla</p>
             </div>
           </ul>
           <div className=" my-10 text-center"></div>

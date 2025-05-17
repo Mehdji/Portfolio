@@ -7,10 +7,10 @@ import { skills } from "../data";
 export default function Skills() {
   return (
     /*Creation of "skills" section */
-    <section id="skills">
+    <section id="skills" className="scroll-mt-28">
       {/*Container class set the max width to the min-width of the current breakpoint. */}
       {/*Here we use a px-5 for horizontal padding, py-5 for vertical padding  mx-auto to center the div  */}
-      <div className="container px-5 py-10 mx-auto">
+      <div className="container px-5 py-10 mx-auto ">
         {/*Centerring the div and margin of 20*/}
         <div className="text-center mb-20">
           {/*Adding a "chip icon" for illustration; w-10 for the width inline-block for the layout and mb-4 for the margin bottom*/}
@@ -18,13 +18,11 @@ export default function Skills() {
           <h1 className="sm:text-4xl text-3xl font-medium title-font  text-sky-950 dark:text-blue-100  mb-4">
             {/*Title for the section; set up text size to 4xl for sm; sm is for responsive(small screen= max-width 640px) */}
             {/*text-3xl and font-medium for the font size and title font for the font family; mb-4 for the margin bottom*/}
-            Skills &amp; Technologies
+            Solutions et technologies
           </h1>
           <p className="text-base  text-sky-950 dark:text-blue-100 leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
             {/*Adding a paragraph; using text base for the font size and leading-relaxed to set the line height; xl and lg to set the width responsiveness mx for horiz margin*/}
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi sit
-            ipsa delectus eum quo voluptas aspernatur accusantium distinctio
-            possimus est.
+            Un aperçu des technologies et outils que j’utilise dans mes projets.
           </p>
         </div>
         <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">

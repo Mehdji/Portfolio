@@ -9,6 +9,7 @@ import Navbar from "./components/Navbar";
 import Project from "./components/Project";
 import Skills from "./components/Skills";
 import Skillsmatrix from "./components/Skillsmatrix";
+import TechnologyMonitoring from "./components/TechnologyMonitoring";
 
 export default function App(): React.ReactNode {
   return (
@@ -22,14 +23,13 @@ export default function App(): React.ReactNode {
       </button>*/}
       <Navbar />
       <About />
-
       <Internship />
       <Skillsmatrix />
       <Skills />
-      <Certificats />
       <Project />
+      <Certificats />
+      <TechnologyMonitoring />
       <Contact />
-      {/*<TechnologyMonitoring />*/}
     </main>
   );
 }

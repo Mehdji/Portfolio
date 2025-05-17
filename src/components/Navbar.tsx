@@ -41,25 +41,25 @@ export default function Navbar() {
         </a>
         <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l  md:border-gray-700 flex flex-wrap items-center text-base justify-center">
           <a href="#internship" className="mr-5 hover:text-white">
-            Internship
+            Stage
           </a>
           <a href="#skills_matrix" className="mr-5 hover:text-white ">
-            Skill's matrix
+            Matrice de compétences
           </a>
           <a href="#skills" className="mr-5 hover:text-white">
-            Skills & Technologies
+            Solutions et technologies
           </a>
           <a href="#projects" className="mr-5 hover:text-white">
-            Past Work
+            Réalisations
           </a>
-          <a href="#skills" className="mr-5 hover:text-white">
-            Skills
+          <a href="#certificats" className="mr-5 hover:text-white">
+            Certifications
           </a>
           <a
             href="#contact"
             className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0"
           >
-            Hire Me
+            Me contacter
             <ArrowRightIcon className="w-4 h-4 ml-1" />
           </a>
         </nav>

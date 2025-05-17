@@ -11,16 +11,16 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className=" text-sky-950 dark:text-blue-100 body-font"
+      className=" text-sky-950 dark:text-blue-100 body-font scroll-mt-28"
     >
       <div className="container px-5 py-1 mx-auto text-center lg:px-40">
         <div className="flex flex-col w-full mb-20">
           <CodeBracketIcon className="mx-auto inline-block w-10 mb-4 text-sky-600 font-bold" />
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-sky-950 dark:text-blue-100">
-            Apps I've Built
+            Réalisations
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Here you can take a look at my creations.
+            Découvrez ce que j’ai eu plaisir à développer.
           </p>
         </div>
         <div className="flex flex-wrap h-screen -m-4 ">
