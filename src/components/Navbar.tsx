@@ -4,6 +4,7 @@ import { Switch } from "@/components/ui/switch";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import { useEffect, useState } from "react";
 import { GoMoon, GoSun } from "react-icons/go";
+
 export default function Navbar() {
   const [darkmode, setDarkmode] = useState<boolean>(false);
 
