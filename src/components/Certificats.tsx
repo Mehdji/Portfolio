@@ -30,7 +30,7 @@ export default function Certificats() {
                 <CarouselItem>
                   <img
                     src={anssi1}
-                    className="mx-auto h-80 w-auto object-contain"
+                    className="mx-auto h-80 w-auto object-contain  shadow-sky-950 shadow-lg rounded-3xl"
                     alt="anssi1"
                   />
                   <h1 className="text-xl font-medium mt-5 mb-3">
@@ -58,7 +58,7 @@ export default function Certificats() {
                 <CarouselItem>
                   <img
                     src={cnil}
-                    className="mx-auto h-80 w-auto object-contain"
+                    className="mx-auto h-80 w-auto object-contain  shadow-sky-950 shadow-lg rounded-3xl"
                     alt="cnil"
                   />
                   <h1 className="text-xl font-medium mt-5 mb-3">
@@ -72,7 +72,7 @@ export default function Certificats() {
                 <CarouselItem>
                   <img
                     src={openc}
-                    className="mx-auto h-80 w-auto object-contain"
+                    className="mx-auto h-80 w-auto object-contain  shadow-sky-950 shadow-lg rounded-3xl"
                     alt="openc"
                   />
                   <h1 className="text-xl font-medium mt-5 mb-3">
