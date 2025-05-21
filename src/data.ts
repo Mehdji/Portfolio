@@ -1,5 +1,7 @@
 
-import { FaHtml5, FaCss3,FaJs, FaReact } from "react-icons/fa";
+import { FaHtml5, FaCss3,FaJs, FaReact,FaSymfony,FaPhp,FaNodeJs,FaLinux } from "react-icons/fa";
+import { VscVscode } from "react-icons/vsc";
+import { TbBrandReactNative } from "react-icons/tb";
 import { SiAdobephotoshop, SiAdobepremierepro } from "react-icons/si";
 import { TbSql } from "react-icons/tb";
 import { GiDeliveryDrone } from "react-icons/gi";
@@ -64,6 +66,23 @@ export const skills:skill[] = [
     title:"React",
     logo: FaReact
   },
+    {
+    title:"React Native",
+    logo: TbBrandReactNative
+  },
+  
+   {
+    title:"NodeJs",
+    logo: FaNodeJs,
+  },
+    {
+    title:"PHP",
+    logo: FaPhp
+  },
+   {
+    title:"Symfony",
+    logo: FaSymfony
+  },
 
   {
     title:"SQL",
@@ -80,6 +99,14 @@ export const skills:skill[] = [
   {
     title:"PremierePro",
     logo: SiAdobepremierepro
+  },
+   {
+    title:"Linux",
+    logo: FaLinux
+  },
+   {
+    title:"VsCode",
+    logo: VscVscode
   }
   
   
