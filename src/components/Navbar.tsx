@@ -1,9 +1,11 @@
 // src/components/navbar.tsx
+import git from "../assets/github.svg";
+import linkedin from "../assets/linkedin.svg";
 
 import { Switch } from "@/components/ui/switch";
-import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import { useEffect, useState } from "react";
 import { GoMoon, GoSun } from "react-icons/go";
+
 export default function Navbar() {
   const [darkmode, setDarkmode] = useState<boolean>(false);
 
@@ -63,7 +65,27 @@ export default function Navbar() {
             className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0"
           >
             Me contacter
-            <ArrowRightIcon className="w-4 h-4 ml-1" />
+            {/*<ArrowRightIcon className="w-4 h-4 ml-1" />*/}
+          </a>
+          <a
+            href="https://github.com/Mehdji/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-transform duration-200 hover:scale-110"
+          >
+            <img
+              src={git}
+              alt="GitHub"
+              className="mx-3 w-8 h-auto filter invert"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/mehdi-naoui-5a3718140/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-blue-800 transition-transform duration-200 hover:scale-110"
+          >
+            <img src={linkedin} alt="GitHub" className="w-8 h-auto mx-3  " />
           </a>
         </nav>
 
