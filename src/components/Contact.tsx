@@ -1,53 +1,40 @@
-//Mehdi NAOUI
-//BTS SIO SLAM 2024
-// ./src/components/Contact.tsx
 import { motion, useInView } from "framer-motion";
 import React, { useRef } from "react";
 export default function Contact() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
-  /*Adding three useState hooks to manage change in name, email and message*/
-  /*useState store and change variable state when nedded*/
+
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [message, setMessage] = React.useState("");
+  const [rgpdChecked, setRgpdChecked] = React.useState(false);
+  const [formError, setFormError] = React.useState("");
 
   function encode(data: any) {
-    /*Take "data" object with user's data sent by form calling this function.*/
-    /*map key and data to encode it respectively using "=" as separator*/
-    /*Then join everything together with & as separtor"*/
-    /*Finally we have: key=data&key=data&key=data name=ali&email=ali@google.com&text=helloworld*/
     return Object.keys(data)
       .map(
-        /*encodeURIComponent escape special characters in order to be sent trough url. */
         (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]),
       )
       .join("&");
   }
 
-  /*TO DO*/
-  /*Comment handleSubmit*/
-  /*handleSubmit function manage user's information delivery*/
-  /*.preventDefault() allow to cancel an event.
-  The action that belong to the event will not occur.*/
-
-  function handleSubmit(e: any) {
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    /*Here we use Fetch API to reach the server in order to submit our form*/
-    /*We craft a body and a header and send it with POST method*/
+    if (!rgpdChecked) {
+      setFormError("Vous devez accepter la politique de confidentialité.");
+      return;
+    }
+    setFormError("");
     fetch("/", {
       method: "POST",
       headers: { "content-type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", name, email, message }),
     })
-      /*then tell us if request success and catch raise an error message if request failed*/
-      .then(() => alert("Message sent!"))
+      .then(() => alert("Message envoyé !"))
       .catch((error) => alert(error));
   }
 
   return (
-    /*Create a section to encapsulate our contact element's*/
-    /*Position set to relative*/
     <section id="contact" className="relative">
       <motion.section
         ref={ref}
@@ -151,6 +138,40 @@ export default function Contact() {
                 onChange={(e) => setMessage(e.target.value)}
               />
             </div>
+            {/* RGPD Checkbox */}
+            <div className="relative mb-4 flex items-start">
+              <input
+                type="checkbox"
+                id="rgpd"
+                name="rgpd"
+                checked={rgpdChecked}
+                onChange={(e) => setRgpdChecked(e.target.checked)}
+                className="mt-1 mr-2"
+                required
+              />
+              <label
+                htmlFor="rgpd"
+                className="text-xs text-sky-950 dark:text-blue-100"
+              >
+                J'ai lu et j'accepte la{" "}
+                <a
+                  href="/politique-confidentialite"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline text-indigo-500"
+                >
+                  politique de confidentialité
+                </a>
+                .<br />
+                Les informations recueillies via ce formulaire sont enregistrées
+                pour permettre de vous recontacter. Conformément au RGPD, vous
+                pouvez exercer votre droit d'accès, de rectification ou de
+                suppression de vos données en me contactant.
+              </label>
+            </div>
+            {formError && (
+              <p className="text-red-500 text-xs mb-2">{formError}</p>
+            )}
             <button
               type="submit"
               className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
