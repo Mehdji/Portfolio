@@ -9,26 +9,30 @@ import landing from "/src/assets/landing.png";
 import form from "/src/assets/form.png";
 import python from "/src/assets/python.png";
 import tribute from "/src/assets/tribute.png";
+import  palindrome from "/src/assets/palindrome.png";
+import  emargement from "/src/assets/emargement.png";
+import  emargementmobile from "/src/assets/emargementmobile.png";
+
 export const projects = [
   {
     title: "Landing",
     subtitle: "HTML and CSS",
     description:
-      "This is a classic landing page made using only html and css wihtout use of AI.",
+      "This is a classic landing page made using only HTML and CSS without use of AI.",
     image: landing,
     link: "https://codepen.io/Mehdi787/full/QWXvXeJ",
   },
   {
     title: "Form",
     subtitle: "HTML and CSS",
-    description: "A customer review form made in html and css.",
+    description: "A customer review form made in HTML and CSS.",
     image: form,
     link: "https://codepen.io/Mehdi787/full/zYVNJEE",
   },
   {
     title: "Python",
     subtitle: "HTML and CSS",
-    description: "A web tutorial for the python programming language.",
+    description: "A web tutorial for the Python programming language.",
     image: python,
     link: "https://codepen.io/Mehdi787/full/MWMmMLx",
   },
@@ -38,6 +42,27 @@ export const projects = [
     description: "A tribute page dedicated to my father.",
     image: tribute,
     link: "https://codepen.io/Mehdi787/full/XWLRvWW",
+  },
+  {
+    title: "Palindrome",
+    subtitle: "JavaScript",
+    image: palindrome,
+    description: "Une application web en JS qui teste si une chaîne est un palindrome.", 
+    link: "https://codepen.io/Mehdi787/full/VYZGOMb",
+  },
+  {
+    title: "GEmargement",
+    subtitle: "PHP et Symfony",
+    description: "Application d'émargement web développé en Symfony.",
+    image: emargement,
+    link: "https://www.figma.com/design/i03DTcea1AlBzs3f7QunsI/PPE-App-Emargement-Web?node-id=0-1&m=dev&t=XtxoxzMex2zoccY8-1",
+  },
+    {
+    title: "GEmargement mobile",
+    subtitle: "PHP et Symfony",
+    description: "Application d'émargement web sur mobile développé en React Native.",
+    image: emargementmobile,
+    link: "https://www.figma.com/design/zvFHjSohIDlnfAmvQWv5Xc/PPE-App-Emargmnt-Mobile?node-id=0-1&m=dev&t=0WZlZ3D10e0fqFqL-1",
   },
 ];
 

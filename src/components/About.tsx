@@ -1,7 +1,7 @@
 // src/components/About.tsx
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import avatar_dev from "../assets/dev1.svg";
+import mehdi from "../assets/mehdi.jpeg";
 
 export default function About(): JSX.Element {
   const ref = useRef(null);
@@ -53,9 +53,9 @@ export default function About(): JSX.Element {
           </div>
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
             <img
-              className="object-cover object-center rounded"
+              className="object-contain object-center rounded-full s shadow-sky-950 shadow-lg"
               alt="hero"
-              src={avatar_dev}
+              src={mehdi}
             />
           </div>
         </div>
