@@ -19,9 +19,9 @@ export default function Skillsmatrix() {
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6, ease: "easeOut" }}
         id="intership"
-        className="min-h-screen p-10 text-sky-950 dark:text-blue-100"
+        className="min-h-screen px-10 text-sky-950 dark:text-blue-100"
       >
-        <div className="container px-5 h-auto pt-10 mx-auto text-center lg:px-40 ">
+        <div className="container px-5 h-auto pt-3 mx-auto text-center lg:px-40 ">
           <div className="text-center">
             <TableCellsIcon className="mx-auto inline-block w-10 mb-4 text-sky-600 font-bold" />
             <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-sky-950 dark:text-blue-100">

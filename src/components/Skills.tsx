@@ -11,7 +11,7 @@ export default function Skills() {
   const isInView = useInView(ref, { once: true }); // true = 1 seule fois
   return (
     /*Creation of "skills" section */
-    <section id="skills" className="scroll-mt-28">
+    <section id="skills" className="scroll-mt-10">
       <motion.section
         ref={ref}
         initial={{ opacity: 0, y: 50 }}
@@ -22,7 +22,7 @@ export default function Skills() {
       >
         {/*Container class set the max width to the min-width of the current breakpoint. */}
         {/*Here we use a px-5 for horizontal padding, py-5 for vertical padding  mx-auto to center the div  */}
-        <div className="container px-5 py-10 mx-auto ">
+        <div className="container  px-5 py-10 mx-auto ">
           {/*Centerring the div and margin of 20*/}
           <div className="text-center mb-20">
             {/*Adding a "chip icon" for illustration; w-10 for the width inline-block for the layout and mb-4 for the margin bottom*/}

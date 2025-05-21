@@ -14,7 +14,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className=" text-sky-950 dark:text-blue-100 body-font scroll-mt-28"
+      className=" text-sky-950 dark:text-blue-100 body-font scroll-mt-14"
     >
       <motion.section
         ref={ref}

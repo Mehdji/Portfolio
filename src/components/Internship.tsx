@@ -13,7 +13,7 @@ export default function Internship() {
   return (
     <section
       id="internship"
-      className=" text-sky-950 dark:text-blue-100 body-font scroll-mt-28"
+      className=" text-sky-950 dark:text-blue-100 body-font scroll-mt-20"
     >
       <motion.section
         ref={ref}
@@ -23,7 +23,7 @@ export default function Internship() {
         id="intership"
         className="min-h-screen p-10 text-sky-950 dark:text-blue-100"
       >
-        <div className="container px-5 h-auto pt-10 mx-auto text-center lg:px-40  ">
+        <div className="container px-5 h-auto pt-3 mx-auto text-center lg:px-40  ">
           <div className="text-center">
             <WrenchScrewdriverIcon className="mx-auto inline-block w-10 mb-4 text-sky-600 font-bold" />
             <h1 className="sm:text-4xl mb-10 text-3xl font-medium title-font  text-sky-950 dark:text-blue-100">
