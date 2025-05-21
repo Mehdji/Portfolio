@@ -2,9 +2,14 @@ import { WrenchScrewdriverIcon } from "@heroicons/react/24/solid";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import autrice_logo from "../assets/autrice.jpg";
+import autrice_app from "../assets/autriceapp.png";
 import autrice_workplace from "../assets/espace_travail_autrice.jpg";
 import autrice_front from "../assets/facade_ext_autrice.png";
+import guerkin from "../assets/guerkin.png";
+import playright_code from "../assets/playrightcode.png";
+import playright_logo from "../assets/playrightlogo.png";
 import autrice_workstation from "../assets/poste_de_travail_autrice.jpg";
+import test from "../assets/test.png";
 
 // src/components/Intership.tsx
 export default function Internship() {
@@ -31,6 +36,9 @@ export default function Internship() {
             </h1>
             <div className="overflow-hidden mx-auto my-10  w-1/2 shadow-sky-950 shadow-lg rounded-3xl ">
               <img src={autrice_logo} className=" text-center "></img>
+            </div>
+            <div className="overflow-hidden mx-auto my-10  w-full shadow-sky-950 shadow-lg rounded-3xl ">
+              <img src={autrice_app} className=" text-center "></img>
             </div>
             <p className="mb-8 first-letter:font-serif   first-letter:float-left first-letter:font-bold first-letter:text-6xl font-body leading-relaxed text-justify text-sky-950 dark:text-blue-100">
               Durant mon stage au sein de l'entreprise <span>Autrice</span>,
@@ -93,14 +101,18 @@ export default function Internship() {
                 Avec Postman, j'ai testé et vérifié le bon fonctionnement des
                 différentes routes de l'application.
               </li>
-              <li>
-                <span className="font-semibold">
-                  Gestion de bases de données :
-                </span>{" "}
-                J'ai manipulé des bases de données relationnelles avec
-                PostgreSQL, notamment pour gérer et exploiter les données
-                nécessaires au fonctionnement de l'application.
-              </li>
+              <div className="overflow-hidden mx-auto my-10 w-fit shadow-sky-950 shadow-lg rounded-3xl ">
+                <img src={playright_logo} className=" text-center "></img>
+              </div>
+              <div className="overflow-hidden mx-auto my-10 w-fit shadow-sky-950 shadow-lg rounded-3xl ">
+                <img src={playright_code} className="h-32 text-center "></img>
+              </div>
+              <div className="overflow-hidden mx-auto my-10 w-fit shadow-sky-950 shadow-lg rounded-3xl ">
+                <img src={guerkin} className=" text-center "></img>
+              </div>
+              <div className="overflow-hidden mx-auto my-10  w-fit shadow-sky-950 shadow-lg rounded-3xl ">
+                <img src={test} className=" text-center "></img>
+              </div>
               <div className="overflow-hidden mx-auto my-10  w-1/2 shadow-sky-950 shadow-lg rounded-3xl ">
                 <img src={autrice_workstation} className=" text-center "></img>
               </div>

@@ -51,7 +51,7 @@ export default function About(): JSX.Element {
               </a>
             </div>
           </div>
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+          <div className="lg:max-w-md lg:w-full md:w-1/2 w-5/6">
             <img
               className="object-contain object-center rounded-full s shadow-sky-950 shadow-lg"
               alt="hero"
